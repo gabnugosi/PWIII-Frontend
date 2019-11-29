@@ -10,6 +10,15 @@
           <th>Ações</th>
         </tr>
       </thead>
-      <!-- TBODY -->
+      <tbody>
+        <tr *ngFor="let it of autores">
+          <td>{{it.Nome}}</td>
+          <td>
+            <button class="btn btn-danger">Excluir</button>
+            <button class="btn btn-info" style="margin-left: 10px">Editar</button>
+            <button class="btn btn-info" style="margin-left: 10px">Detalhar</button>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
