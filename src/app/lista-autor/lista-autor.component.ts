@@ -14,7 +14,7 @@ export class ListaAutorComponent implements OnInit {
   ngOnInit() {
       this.service
           .getAutores()
-          .subscribe((data: Autor[])=>  this.autores = data,
+          .subscribe((data: Autor[])=>   this.autores = data,
                       error => console.log(error));                  
   }
 

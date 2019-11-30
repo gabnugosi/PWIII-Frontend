@@ -10,7 +10,7 @@ import { Autor } from '../autor';
 
 })
 export class AutorAPIService {
-  apiURL: string = "http://localhost:8080/api/autores";
+  apiURL: string = "http://localhost:8387/bibliotecadigital/autores";
   constructor(private httpClient: HttpClient) { }
 
   handleError(error) {
